@@ -7,20 +7,21 @@
 print("Hey! This is Juicebox calculator mode. Cool, huh?")
 
 #Ask the user for the total bill number and store that number as a decimal
-bill = input("What was the total bill? $")
+bill = input("What was the total bill? \n$")
 new_bill = float(bill)
 
 #Ask the user how much percent they would like to tip and store that number as a decimal
-tip = input("How much tip would you like to give? 10, 12, or 15? ")
+tip = input("What percentage tip would you like to give?\n(Do not include % sign)\n")
 new_tip = float(tip)
 
 
 #Ask the user how many lovely humans they are eating with. Actually splitting the bill because I hear some humans are freeloaders
-split = input("How many people to split the bill? " )
+split = input("How many people to split the bill?\n" )
 new_split = int(split)
 
 #Divide the bill by the number of users splitting the bill to get the price each user has to pay for the bill
 final_bill = (new_bill / new_split)
+
 #Divide the tip by 100 to get the decimal number of the tip percentage. Then multiply that decimal by the bill each person has to pay to get how much each user has to tip.
 final_tip = final_bill * (new_tip / 100)
 
