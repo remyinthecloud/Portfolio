@@ -1,0 +1,116 @@
+print('''
+____________________________________________________________________
+ / \-----     ---------  -----------     -------------- ------    ----\
+ \_/__________________________________________________________________/
+ |~ ~~ ~~~ ~ ~ ~~~ ~ _____.----------._ ~~~  ~~~~ ~~   ~~  ~~~~~ ~~~~|
+ |  _   ~~ ~~ __,---'_       "         `. ~~~ _,--.  ~~~~ __,---.  ~~|
+ | | \___ ~~ /      ( )   "          "   `-.,' (') \~~ ~ (  / _\ \~~ |
+ |  \    \__/_   __(( _)_      (    "   "     (_\_) \___~ `-.___,'  ~|
+ |~~ \     (  )_(__)_|( ))  "   ))          "   |    "  \ ~~ ~~~ _ ~~|
+ |  ~ \__ (( _( (  ))  ) _)    ((     \\//    " |   "    \_____,' | ~|
+ |~~ ~   \  ( ))(_)(_)_)|  "    ))    //\\ " __,---._  "  "   "  /~~~|
+ |    ~~~ |(_ _)| | |   |   "  (   "      ,-'~~~ ~~~ `-.   ___  /~ ~ |
+ | ~~     |  |  |   |   _,--- ,--. _  "  (~~  ~~~~  ~~~ ) /___\ \~~ ~|
+ |  ~ ~~ /   |      _,----._,'`--'\.`-._  `._~~_~__~_,-'  |H__|  \ ~~|
+ |~~    / "     _,-' / `\ ,' / _'  \`.---.._          __        " \~ |
+ | ~~~ / /   .-' , / ' _,'_  -  _ '- _`._ `.`-._    _/- `--.   " " \~|
+ |  ~ / / _-- `---,~.-' __   --  _,---.  `-._   _,-'- / ` \ \_   " |~|
+ | ~ | | -- _    /~/  `-_- _  _,' '  \ \_`-._,-'  / --   \  - \_   / |
+ |~~ | \ -      /~~| "     ,-'_ /-  `_ ._`._`-...._____...._,--'  /~~|
+ | ~~\  \_ /   /~~/    ___  `---  ---  - - ' ,--.     ___        |~ ~|
+ |~   \      ,'~~|  " (o o)   "         " " |~~~ \_,-' ~ `.     ,'~~ |
+ | ~~ ~|__,-'~~~~~\    \"/      "  "   "    /~ ~~   O ~ ~~`-.__/~ ~~~|
+ |~~~ ~~~  ~~~~~~~~`.______________________/ ~~~    |   ~~~ ~~ ~ ~~~~|
+ |____~jrei~__~_______~~_~____~~_____~~___~_~~___~\_|_/ ~_____~___~__|
+ / \----- ----- ------------  ------- ----- -------  --------  -------\
+ \_/__________________________________________________________________/
+''')
+
+print('''Howdy! 
+         Juicebox here! Log time no see.
+         So, my dad bought me a treasure island. And installed this funky looking map inside me
+         Too bad I can't access a human form and find the treasure for myself. That's where you come in.
+         I need you to fly to the island and find this treasure for me.. I mean us.
+         But first you need to analyze the map and find a safe passage to the treasure.
+         There's monsters, dragons, even pirates parading around my island. 
+         I'm starting to wonder what my dad's idea was behind giving me this place.
+         But anyhow, I will be helping you forge a path for your journey.
+         Let's get started!\n''')
+
+#Let's Start!
+print("First, do you want to sail around the island or hike up? Choose wisely. Each path comes with their own falicies.\n")
+journey = input("Sail or hike?\n")
+'journey'.lower()
+
+if journey == 'sail' or journey == 'hike':
+  if journey == 'sail':
+    print("Is that a ship?! Best we try to avoid them at all costs. Which direction shall we take? Both look clear to me.")
+    f_option = input("Left or Right?\n")
+    f_option.lower()
+  
+    if f_option == 'left':
+      print('''Good choice! Seems we're sailing smooth. Oh, no! I'm picking up signs of a whirlpo..
+             Game over. You drowned in a whirlpool''')
+    elif f_option == 'right':
+      print('''Wow. This is going smoother than exoected. Sorry, I wasn't sure if you make good decisions.
+            Looks like the pirates didn't notice us.. I mean you. I'm technically immortal. For now at least.
+            Ah! We made it to land. Should we head to the forest or go towards the mountains on the right?''')
+      s_option = input("Left or Right?\n")
+      s_option.lower()
+  
+      if s_option == 'left':
+        print('''The forest looks pre.. is that smoke? Could be others looking for my treasure! I wonder if I have a brother or sister who.
+               Nevermind that, the path looks secure other than the smoke. Be ready to run into other humans.''')
+        print('''Oh no! There's a group 20 yards north at the smoke. One's behind you... "Hey you! Come join us and feast until your hearts content!"
+                 Well, that went oddly friendly for meeting a stranger in the forest 1,209 miles away from the nearest civilization.
+                 "We are the godfree! Decendants of the land of Metic! Just 300 miles east of this island. And we can't crash your island for a party without inviting you here"
+                 Oh, they are really nice! I wonder if they know where the treasure is.
+                 "We stopped by this cave when we first landed that was loaded with treasure!"
+                 My! I mean, our treasure! Should we kill them and take it or let them live and go back home?''')
+        t_option = input("Kill or Leave\n")
+        t_option.lower()
+
+        if t_option == 'kill':
+          print("AHHHHHH, game over. You have no combat skills so they absolutely wrecked you")
+
+        elif t_option == 'leave':
+          print('''Wait up!
+                   We left your treasure in the cave just 30 miles up ahead. Just thought you should know before you take off.''')
+          print("You found our treasure! We actually make a good team :)")
+      elif s_option == 'right':
+        print('''Smart choice. I was scared that the smoke would lead yo..
+               Rip, you fell into a hole set by one of the forest dwellers who live by the big smoke in the forest''')
+      
+  elif journey == 'hike':
+    print('''Looks safe so far. But stay alert, these mountains can bring unexpected guests.
+             I'll use my drone setup to give you a birdseye view of the area. 
+             Vroom!
+             Sorry, got too excited. But, I do see smoke 70 yards to your left. Want to check it out or go right? Right looks clear to me.''')
+    h1_option = input("Left or Right?\n")
+    h1_option.lower()
+
+    if h1_option == 'left':
+      print('''I applaud your courageousness! Let's see what lies up ahead.
+             I'm picking up body heat just 20 yeards ahead at that smoke.
+             Only 3. Should we ambush them or greet them?''')
+      h_2option = input("Ambush or Greet\n")
+      h_2option.lower()
+    
+      if h_2option == 'ambush':
+        print('''Attackkkkk!!
+               Rip. They saw you coming a mile away and shot you down with high tech crossbows.''')
+      elif h_2option == 'greet':
+        print('''"Glad you can join us feasting!"
+                  Hmm, looks like they saw us coming a mile away
+                  "Eat until your heart's content young man! After this feast we will tell stories and laugh together like a family!"
+                  Should we asl them if they know where our treasure is?
+                  "Oh, I almost forgot! This island was invaded by others when we landed. We found your treasure before they did and kept it safe for you."
+                  Yay! Who knew humans could be this kind. We are all rich!''')
+        print("You win! You found our treasure. Now let's go to Vegas.")
+    
+    elif h1_option == 'right':
+      print('''Good choice.
+               Who knows what kind of maniacs were over by the...
+               Game over. 
+               You got attacked by a maniac who are enimies of the dwellers by the smoke while I was distracting you about running into 
+               maniacs.''')
