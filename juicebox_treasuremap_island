@@ -45,7 +45,9 @@ j_journey = journey.lower()
 if j_journey == 'sail' or j_journey == 'hike':
   if j_journey == 'sail':
     print("Is that a ship?! Best we try to avoid them at all costs. Which direction shall we take? Both look clear to me.")
-    
+
+    #Note see line 73
+    #More effecient to write it these two lines as one f_option = input("Left or Right?\n").lower()
     f_option = input("Left or Right?\n")
     f = f_option.lower()
   
@@ -68,13 +70,12 @@ if j_journey == 'sail' or j_journey == 'hike':
                  Oh, they are really nice! I wonder if they know where the treasure is.
                  "We stopped by this cave when we first landed that was loaded with treasure!"
                  My! I mean, our treasure! Should we kill them and take it or let them live and go back home?''')
-        t_option = input("Kill or Leave\n")
-        t = t_option.lower()
+        t_option = input("Kill or Leave\n").lower()
 
-        if t == 'kill':
+        if t_option == 'kill':
           print("AHHHHHH, game over. You have no combat skills so they absolutely wrecked you")
 
-        elif t == 'leave':
+        elif t_option == 'leave':
           print('''Wait up!
                    We left your treasure in the cave just 30 miles up ahead. Just thought you should know before you take off.''')
           print("You found our treasure! We actually make a good team :)")
@@ -84,7 +85,7 @@ if j_journey == 'sail' or j_journey == 'hike':
       
   elif j_journey == 'hike':
     print('''Looks safe so far. But stay alert, these mountains can bring unexpected guests.
-             I'll use my drone setup to give you a birds-eye view of the area. 
+             I'll use my drone setup to give you a birdseye view of the area. 
              Vroom!
              Sorry, got too excited. But, I do see smoke 70 yards to your left. Want to check it out or go right? Right looks clear to me.''')
     h1_option = input("Left or Right?\n")
@@ -92,7 +93,7 @@ if j_journey == 'sail' or j_journey == 'hike':
 
     if h == 'left':
       print('''I applaud your courageousness! Let's see what lies up ahead.
-             I'm picking up body heat just 20 yards ahead at that smoke.
+             I'm picking up body heat just 20 yeards ahead at that smoke.
              Only 3. Should we ambush them or greet them?''')
       h_2option = input("Ambush or Greet\n")
       h2 = h_2option.lower()
@@ -115,4 +116,3 @@ if j_journey == 'sail' or j_journey == 'hike':
                Game over. 
                You got attacked by a maniac who are enimies of the dwellers by the smoke while I was distracting you about running into 
                maniacs.''')
-
