@@ -105,7 +105,7 @@ if j_journey == 'sail' or j_journey == 'hike':
         print('''"Glad you can join us feasting!"
                   Hmm, looks like they saw us coming a mile away
                   "Eat until your heart's content young man! After this feast we will tell stories and laugh together like a family!"
-                  Should we asl them if they know where our treasure is?
+                  Should we ask them if they know where our treasure is?
                   "Oh, I almost forgot! This island was invaded by others when we landed. We found your treasure before they did and kept it safe for you."
                   Yay! Who knew humans could be this kind. We are all rich!''')
         print("You win! You found our treasure. Now let's go to Vegas.")
