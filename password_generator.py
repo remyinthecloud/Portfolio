@@ -38,8 +38,5 @@ else:
 random.shuffle(passwords)
 print("Here is your password: ", *passwords, sep='')
 
-# for password in range(0, len(passwords)):
-#   print(random.choice(passwords))
-  # print(random.choice(gen_password), end="")
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
